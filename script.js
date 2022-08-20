@@ -1,7 +1,7 @@
-document.getElementById('signin-btn').addEventListener('click', function () {
-    document.querySelector('.signin').style.display = 'flex';
-});
+let slogan = document.getElementById('slogan')
 
-document.getElementById('close-signin').addEventListener('click', function () {
-    document.querySelector('.signin').style.display = 'none';
-});
+
+window.addEventListener('scroll', function(){
+    let value = window.scrollY;
+    slogan.style.opacity = 100 + value * -0.3 + '%';
+})
